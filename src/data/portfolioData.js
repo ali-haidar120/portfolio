@@ -204,11 +204,27 @@ export const education = [
 
 export const certifications = [
   {
-    title: "Full Stack Web Development",
-    issuer: "Air University Islamabad",
-    date: "August 2025",
+    id: "fullstack-air-uni",
+    title: "Full Stack Development",
+    workshopTitle: "Workshop on Full Stack Development",
+    award: "Certificate of Participation",
+    recipient: "Ali Haidar",
+    issuer: "Centre for Professional Development",
+    institution: "Air University, Islamabad",
+    serialNo: "2508586",
+    date: "18 to 22 August, 2025",
+    signatory: "Zaheer Mirza",
+    signatoryRole: "Air Commodore (Retd), Director CPD",
     type: "Professional Certification",
-    skillsLearned: ["Full Stack Architecture", "Modern Web Fundamentals", "API Integration", "Database Connectivity"]
+    image: "/certificate-fullstack.jpg",
+    description:
+      "Awarded for successfully completing the intensive professional workshop on Full Stack Development held at the Centre for Professional Development (CPD), Air University, Islamabad.",
+    skillsLearned: [
+      "Full Stack Web Architecture",
+      "Modern Web Development Fundamentals",
+      "API & Systems Integration",
+      "Database Connectivity & Backend Logic"
+    ]
   }
 ];
 

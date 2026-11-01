@@ -92,18 +92,26 @@ export const skillsData = {
 export const experiences = [
   {
     role: "Web Developer Intern",
-    company: "Kohistan Builders And Developers",
+    department: "Creative Art & Design Department",
+    company: "Kohistan Builders & Developers",
     type: "Internship",
-    duration: "June 2026 – August 2026",
-    location: "Pakistan",
+    duration: "29 June 2026 – 09 August 2026",
+    location: "Islamabad, Pakistan",
+    supervisor: "Malik Muhammad Hasnat (Web Developer)",
+    referenceNo: "KBD/DHR&OD/E/26/09/1657",
+    letterDate: "03-Sep-2026",
+    signatory: "Umaira Shaheen (Manager HR)",
+    verificationEmail: "hr@kbd.com.pk",
+    letterImage: "/internship-letter.jpg",
+    letterPdf: "/Kohistan-Builders-Internship-Letter.pdf",
     description:
-      "Developed, customized, and maintained WordPress websites while gaining hands-on experience with website design and content management.",
+      "Successfully completed internship in the Creative Art & Design Department under the supervision of Web Developer Malik Muhammad Hasnat, demonstrating dedication, professionalism, and fulfilling assigned responsibilities.",
     responsibilities: [
       "Customized themes and page templates to align with client branding and functional requirements.",
       "Maintained website performance, responsiveness, and content management workflows using Elementor and WordPress core.",
-      "Collaborated with project managers to implement content updates and optimize landing page load speeds."
+      "Collaborated with the creative web team and supervisor to implement updates and optimize frontend assets."
     ],
-    technologies: ["WordPress", "Elementor", "HTML5", "CSS3", "CMS Management"]
+    technologies: ["WordPress", "Elementor", "HTML5", "CSS3", "CMS Management", "Web Design"]
   },
   {
     role: "Operations Team Member",

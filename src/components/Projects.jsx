@@ -30,24 +30,23 @@ export default function Projects() {
                 <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
-                <span className="ml-2 font-mono text-[10px] text-cyan-300">django-lms-portal/views.py</span>
+                <span className="ml-2 font-mono text-[10px] text-cyan-300">flask-lms/app.py</span>
               </div>
               <span className="text-[10px] font-mono text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/30">
-                Django RBAC
+                Flask • RBAC
               </span>
             </div>
             
             <div className="font-mono text-[11px] text-slate-300 space-y-1.5 opacity-90">
-              <p className="text-cyan-400">@login_required</p>
-              <p><span className="text-purple-400">def</span> <span className="text-blue-300">submit_assignment</span>(request, course_id):</p>
-              <p className="pl-4 text-slate-400"># Verify student enrollment & deadline</p>
-              <p className="pl-4"><span className="text-indigo-300">if</span> request.user.role == <span className="text-emerald-300">'STUDENT'</span>:</p>
-              <p className="pl-8 text-amber-300">Assignment.objects.create(...)</p>
+              <p className="text-cyan-400">@app.route(<span className="text-emerald-300">'/submit-assignment/&lt;int:id&gt;'</span>, methods=[<span className="text-emerald-300">'POST'</span>])</p>
+              <p><span className="text-purple-400">def</span> <span className="text-blue-300">submit_assignment</span>(id):</p>
+              <p className="pl-4 text-slate-400"># Validates @student.iiu.edu.pk session & 50MB upload</p>
+              <p className="pl-4">db.execute(<span className="text-amber-300">"INSERT INTO submissions (...) VALUES (...)"</span>)</p>
             </div>
 
             <div className="flex items-center justify-between pt-2 border-t border-cyan-500/10 text-[10px] text-slate-400">
-              <span>Authentication • Submissions • Gradebook</span>
-              <span className="text-cyan-400">Full-Stack MVT</span>
+              <span>Domain Verification • Quizzes • 14 Tables</span>
+              <span className="text-cyan-400">Python Full-Stack</span>
             </div>
           </div>
         );

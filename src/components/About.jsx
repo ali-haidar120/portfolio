@@ -24,7 +24,7 @@ export default function About() {
   const highlights = [
     {
       title: "Full-Stack Web Engineering",
-      description: "Hands-on experience building dynamic web apps using Django, JavaScript, Bootstrap, and modern frontend tools.",
+      description: "Hands-on experience building dynamic web apps using Flask, Django, JavaScript, Bootstrap, and modern frontend tools.",
       icon: Terminal,
       color: "from-cyan-500/20 to-cyan-500/5 text-cyan-500"
     },

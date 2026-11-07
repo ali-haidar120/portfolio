@@ -17,7 +17,7 @@ export const personalInfo = {
   summary:
     "I am a 7th-semester Computer Science student at International Islamic University Islamabad, passionate about software development, web technologies, and building practical solutions to real-world problems. I enjoy learning new technologies, solving problems, and developing efficient, user-friendly applications.",
   aboutExtended:
-    "Throughout my academic journey and practical experiences, I have developed a strong foundation in full-stack development, object-oriented principles, and modern web architectures. With hands-on projects ranging from Django-powered web platforms to robust C++ software and relational database systems, I prioritize writing clean, maintainable code. Beyond web engineering, I am keenly interested in expanding into cloud computing, DevOps practices, and practical AI integrations to build scalable software systems that create measurable real-world impact.",
+    "Throughout my academic journey and practical experiences, I have developed a strong foundation in full-stack development, object-oriented principles, and modern web architectures. With hands-on projects ranging from Python (Flask & Django) web engines to robust C++ software and relational database systems, I prioritize writing clean, maintainable code. Beyond web engineering, I am keenly interested in expanding into cloud computing, DevOps practices, and practical AI integrations to build scalable software systems that create measurable real-world impact.",
   stats: [
     { label: "Academic Standing", value: "7th Sem", detail: "BS Computer Science" },
     { label: "Cumulative GPA", value: "3.02", detail: "Scale of 4.00" },
@@ -56,6 +56,7 @@ export const skillsData = {
       title: "Backend & Databases",
       description: "Server-side frameworks, ORM, and data persistence",
       skills: [
+        { name: "Flask", level: "Proficient", focus: "Application Routing, Auth, SQLite & Sessions", icon: "Server" },
         { name: "Django", level: "Proficient", focus: "MVT Architecture, Auth, RESTful APIs", icon: "Server" },
         { name: "MongoDB", level: "Familiar", focus: "NoSQL Document Stores & Schemas", icon: "HardDrive" },
         { name: "SQL & Relational DBs", level: "Proficient", focus: "Schema Design, Joins & Queries", icon: "Database" }
@@ -135,19 +136,19 @@ export const projects = [
   {
     id: "lms",
     title: "Learning Management System (LMS)",
-    subtitle: "Web-Based Academic Management & Interactive Education Platform",
+    subtitle: "University Academic Portal with 14 Relational Tables, 3-Tier RBAC & Assessment Engine",
     date: "June 2026",
-    technologies: ["Python", "Django", "JavaScript", "Bootstrap", "HTML5", "CSS3", "SQLite/SQL"],
-    badge: "Full-Stack Web App",
+    technologies: ["Python", "Flask", "SQLite", "Jinja2", "Werkzeug", "Bootstrap", "dnspython", "HTML5/CSS3"],
+    badge: "Full-Stack Web Engine",
     description:
-      "Developed a web-based Learning Management System with secure user authentication, role-based access, course management, assignment submission, and student-instructor interactions.",
+      "Developed an end-to-end 1,200+ line Python Flask Learning Management System featuring 3-tier role-based access, automated quiz assessment engines, university email domain validation, assignment file submission pipelines, and attendance tracking across 14 relational tables.",
     fullDetails: [
-      "Architected role-based access control (RBAC) separating administrative, instructor, and student privileges.",
-      "Implemented dynamic course enrollment, module creation, and real-time assignment submission tracking.",
-      "Engineered clean database models in Django ORM with relational integrity between courses, submissions, and users.",
-      "Built responsive user interfaces with Bootstrap and custom CSS for seamless mobile and desktop accessibility."
+      "Engineered strict institutional domain-validated authentication (@iiu.edu.pk for faculty, @student.iiu.edu.pk for students) with DNS resolver checks, reset token flows, and secure password hashing.",
+      "Architected 14 relational SQLite database tables spanning courses, enrollments, materials, assignments, submissions, quizzes, attempts, attendance, announcements, and activity logs.",
+      "Developed interactive assessment engine supporting timed quizzes with multiple-choice question banks and automatic score calculation upon student attempt submission.",
+      "Built instructor course hub supporting up to 50MB multi-format file uploads (PDF, DOCX, PPTX, ZIP), assignment grading and feedback workflows, and student notification triggers."
     ],
-    highlights: ["Role-Based Access (Admin/Teacher/Student)", "Assignment Submissions", "Course Portal", "Secure Django Auth"],
+    highlights: ["3-Tier RBAC (Admin/Faculty/Student)", "Timed Quizzes & Exam Engine", "50MB Assignment Submissions", "14-Table Relational Schema"],
     githubUrl: "https://github.com/ali-haidar120/Learning-Management-System",
     isPlaceholderLink: false
   },

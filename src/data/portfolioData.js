@@ -148,8 +148,8 @@ export const projects = [
       "Built responsive user interfaces with Bootstrap and custom CSS for seamless mobile and desktop accessibility."
     ],
     highlights: ["Role-Based Access (Admin/Teacher/Student)", "Assignment Submissions", "Course Portal", "Secure Django Auth"],
-    githubUrl: "https://github.com/ali-haidar120",
-    isPlaceholderLink: true
+    githubUrl: "https://github.com/ali-haidar120/Learning-Management-System",
+    isPlaceholderLink: false
   },
   {
     id: "library",

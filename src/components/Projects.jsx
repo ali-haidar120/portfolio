@@ -214,7 +214,7 @@ export default function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title="View GitHub repository"
+                    title={project.isPlaceholderLink ? "View GitHub profile" : `View ${project.title} on GitHub`}
                     className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-cyan-500 text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors"
                   >
                     <Github className="w-4 h-4" />
